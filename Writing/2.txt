@@ -1,0 +1,36 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 2,
+  "section": "Writing",
+  "totalTasks": 2,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "type": "Academic - Task 1 (Data Description)",
+      "timeSuggested": "20 minutes",
+      "wordLimit": "at least 150 words",
+      "instructions": "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt": "The graph below shows the number of tourists visiting a particular Caribbean island between 2010 and 2017.",
+      "chartMetadata": {
+        "title": "Number of tourists visiting a Caribbean island (2010–2017)",
+        "xAxis": "Years (2010 to 2017)",
+        "yAxis": "Millions of visitors",
+        "legend": [
+          "Visitors staying on cruise ships",
+          "Visitors staying on island",
+          "Total"
+        ],
+        "imageUrl": "/2_image/2.png"
+      }
+    },
+    {
+      "taskNumber": 2,
+      "type": "Academic - Task 2 (Opinion Essay)",
+      "timeSuggested": "40 minutes",
+      "wordLimit": "at least 250 words",
+      "instructions": "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "prompt": "In the future, nobody will buy printed newspapers or books because they will be able to read everything they want online without paying.",
+      "specificQuestion": "To what extent do you agree or disagree with this statement?"
+    }
+  ]
+  }

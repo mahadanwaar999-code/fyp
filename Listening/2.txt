@@ -1,0 +1,144 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 2,
+  "section": "Listening",
+  "totalQuestions": 40,
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Festival information and Workshops",
+      "instructions": "Complete the table and notes below. Write ONE WORD ONLY for each answer.",
+      "sections": [
+        {
+          "type": "table-completion",
+          "title": "Festival information",
+          "headers": ["Date", "Type of event", "Details"],
+          "questions": [
+            { "qNumber": 1, "row": "18th", "col": "Details", "text": "company called ____", "answer": "Eustatis" },
+            { "qNumber": 2, "row": "19th-20th (afternoon)", "col": "Details", "text": "has had a good ____", "answer": "review" },
+            { "qNumber": 3, "row": "20th (evening)", "col": "Type of event", "text": "a ____ show", "answer": "dance" },
+            { "qNumber": 4, "row": "20th (evening)", "col": "Details", "text": "show is called ____", "answer": "Chat" }
+          ]
+        },
+        {
+          "type": "note-completion",
+          "title": "Workshops & Outdoor activities",
+          "questions": [
+            { "qNumber": 5, "text": "Workshops: Making ____ food", "answer": "healthy" },
+            { "qNumber": 6, "text": "(children only) Making ____", "answer": "posters" },
+            { "qNumber": 7, "text": "(adults only) Making toys from ____ using various tools", "answer": "wood" },
+            { "qNumber": 8, "text": "Outdoor activities: Swimming in the ____", "answer": "lake" },
+            { "qNumber": 9, "text": "Walking in the woods, led by an expert on ____", "answer": "insects" },
+            { "qNumber": 10, "text": "See the festival organiser’s ____ for more information", "answer": "blog" }
+          ]
+        }
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Minster Park",
+      "instructions": "Choose the correct letter, A, B or C; and label the map below.",
+      "multipleChoice": [
+        {
+          "qNumber": 11,
+          "text": "The park was originally established",
+          "options": {
+            "A": "as an amenity provided by the city council.",
+            "B": "as land belonging to a private house.",
+            "C": "as a shared area set up by the local community."
+          },
+          "answer": "C"
+        },
+        {
+          "qNumber": 12,
+          "text": "Why is there a statue of Diane Gosforth in the park?",
+          "options": {
+            "A": "She was a resident who helped to lead a campaign.",
+            "B": "She was a council member responsible for giving the public access.",
+            "C": "She was a senior worker at the park for many years."
+          },
+          "answer": "A"
+        },
+        {
+          "qNumber": 13,
+          "text": "During the First World War, the park was mainly used for",
+          "options": {
+            "A": "exercises by troops.",
+            "B": "growing vegetables.",
+            "C": "public meetings."
+          },
+          "answer": "B"
+        },
+        {
+          "qNumber": 14,
+          "text": "When did the physical transformation of the park begin?",
+          "options": { "A": "2013", "B": "2015", "C": "2016" },
+          "answer": "C"
+        }
+      ],
+      "mapLabelling": {
+        "title": "Minster Park Map",
+        "imageUrl": "/2_image/2.png",
+        "labels": ["A", "B", "C", "D", "E", "F", "G", "H", "I"],
+        "questions": [
+          { "qNumber": 15, "text": "statue of Diane Gosforth", "answer": "E" },
+          { "qNumber": 16, "text": "wooden sculptures", "answer": "C" },
+          { "qNumber": 17, "text": "playground", "answer": "B" },
+          { "qNumber": 18, "text": "maze", "answer": "A" },
+          { "qNumber": 19, "text": "tennis courts", "answer": "G" },
+          { "qNumber": 20, "text": "fitness area", "answer": "D" }
+        ]
+      }
+    },
+    {
+      "partNumber": 3,
+      "title": "Display on Charles Dickens",
+      "instructions": "Choose TWO letters (21-24) and match the correct topic (25-30).",
+      "multipleSelection": [
+        {
+          "qNumbers": [21, 22],
+          "text": "Which TWO groups of people is the display primarily intended for?",
+          "options": ["A students from the English department", "B residents of the local area", "C the university’s teaching staff", "D potential new students", "E students from other departments"],
+          "answer": ["B", "D"]
+        },
+        {
+          "qNumbers": [23, 24],
+          "text": "What are Cathy and Graham’s TWO reasons for choosing the novelist Charles Dickens?",
+          "options": ["A His speeches inspired others to try to improve society.", "B He used his publications to draw attention to social problems.", "C His novels are well-known now.", "D He was consulted on a number of social issues.", "E His reputation has changed in recent times."],
+          "answer": ["B", "C"]
+        }
+      ],
+      "matching": {
+        "topicOptions": {
+          "A": "poverty", "B": "education", "C": "Dickens’s travels", "D": "entertainment",
+          "E": "crime and the law", "F": "wealth", "G": "medicine", "H": "a woman’s life"
+        },
+        "questions": [
+          { "qNumber": 25, "text": "The Pickwick Papers", "answer": "G" },
+          { "qNumber": 26, "text": "Oliver Twist", "answer": "B" },
+          { "qNumber": 27, "text": "Nicholas Nickleby", "answer": "D" },
+          { "qNumber": 28, "text": "Martin Chuzzlewit", "answer": "C" },
+          { "qNumber": 29, "text": "Bleak House", "answer": "H" },
+          { "qNumber": 30, "text": "Little Dorrit", "answer": "F" }
+        ]
+      }
+    },
+    {
+      "partNumber": 4,
+      "title": "Agricultural programme in Mozambique",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "questions": [
+        { "qNumber": 31, "text": "____ was seen as the main priority to ensure the supply of water.", "answer": "Irrigation" },
+        { "qNumber": 32, "text": "Most of the work organised by farmers' associations was done by ____", "answer": "women" },
+        { "qNumber": 33, "text": "The programme provided ____ for the fences", "answer": "wire", "altAnswer": "wires" },
+        { "qNumber": 34, "text": "The programme provided ____ for suitable crops", "answer": "seed", "altAnswer": "seeds" },
+        { "qNumber": 35, "text": "The farmers provided ____ for the fences on their land.", "answer": "posts" },
+        { "qNumber": 36, "text": "The marketing of produce was sometimes difficult due to lack of ____", "answer": "transport" },
+        { "qNumber": 37, "text": "Training was therefore provided in methods of food ____", "answer": "preservation" },
+        { "qNumber": 38, "text": "Farmers made special places where ____ could be kept.", "answer": "fish", "altAnswer": "fishes" },
+        { "qNumber": 39, "text": "Local people later suggested keeping ____", "answer": "bees" },
+        { "qNumber": 40, "text": "Enough time must be allowed, particularly for the ____ phase of the programme.", "answer": "design" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+.waveform-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.waveform-visualizer {
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+  width: 300px;
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Fade out animation */
+}
+
+.waveform-visualizer.fade-out {
+  opacity: 0;
+}
+
+.waveform-bar {
+  flex: 1;
+  background-color: #3b82f6; /* Modern Blue */
+  margin: 0 1px;
+  border-radius: 4px;
+  animation: pulse 1s infinite; /* Pulsing effect */
+  transform-origin: bottom; /* Scale from bottom */
+  min-height: 4px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.question-text {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  color: inherit;
+  line-height: 1.5;
+}

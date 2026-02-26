@@ -1,0 +1,93 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 3,
+  "section": "Listening",
+  "totalQuestions": 40,
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Employment Agency: Possible Jobs",
+      "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "subSections": [
+        {
+          "title": "First Job: Administrative assistant",
+          "questions": [
+            { "qNumber": 1, "text": "Company that produces ____ (North London)", "answer": "furniture", "type": "note-completion" },
+            { "qNumber": 2, "text": "Responsibilities: go to ____ and take notes", "answer": "meetings", "type": "note-completion" },
+            { "qNumber": 3, "text": "Responsibilities: management of ____", "answer": "diary", "type": "note-completion" },
+            { "qNumber": 4, "text": "Requirements: attention to ____", "answer": "detail", "altAnswer": "details", "type": "note-completion" },
+            { "qNumber": 5, "text": "Experience: need a minimum of ____ of experience of teleconferencing", "answer": "1 year", "altAnswer": "one year", "type": "note-completion" }
+          ]
+        },
+        {
+          "title": "Second Job: Warehouse assistant",
+          "questions": [
+            { "qNumber": 6, "text": "Responsibilities: managing ____", "answer": "deliveries", "type": "note-completion" },
+            { "qNumber": 7, "text": "Requirements: very organised and ____", "answer": "tidy", "type": "note-completion" },
+            { "qNumber": 8, "text": "Requirements: used to working in a ____", "answer": "team", "type": "note-completion" },
+            { "qNumber": 9, "text": "Requirements: able to cope with items that are ____", "answer": "heavy", "type": "note-completion" },
+            { "qNumber": 10, "text": "Need experience of: ____ service", "answer": "customer", "type": "note-completion" }
+          ]
+        }
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Street Play Scheme",
+      "instructions": "Choose the correct letter, A, B or C; and choose TWO letters for the final groups.",
+      "multipleChoice": [
+        { "qNumber": 11, "text": "When did the Street Play Scheme first take place?", "options": { "A": "two years ago", "B": "three years ago", "C": "six years ago" }, "answer": "B" },
+        { "qNumber": 12, "text": "How often is Beechwood Road closed to traffic now?", "options": { "A": "once a week", "B": "on Saturdays and Sundays", "C": "once a month" }, "answer": "A" },
+        { "qNumber": 13, "text": "Who is responsible for closing the road?", "options": { "A": "a council official", "B": "the police", "C": "local wardens" }, "answer": "C" },
+        { "qNumber": 14, "text": "Residents who want to use their cars", "options": { "A": "have to park in another street", "B": "must drive very slowly", "C": "need permission from a warden" }, "answer": "B" },
+        { "qNumber": 15, "text": "Alice says that Street Play Schemes are most needed in", "options": { "A": "wealthy areas", "B": "quiet suburban areas", "C": "areas with heavy traffic" }, "answer": "C" },
+        { "qNumber": 16, "text": "What has been the reaction of residents who are not parents?", "options": { "A": "Many of them were unhappy at first", "B": "They like seeing children play in the street", "C": "They are surprised by the lack of noise" }, "answer": "B" }
+      ],
+      "multipleSelection": [
+        { "qNumbers": [17, 18], "text": "Which TWO benefits for children does Alice think are most important?", "options": ["A increased physical activity", "B increased sense of independence", "C opportunity to learn new games", "D opportunity to be part of a community", "E opportunity to make new friends"], "answer": ["B", "D"] },
+        { "qNumbers": [19, 20], "text": "Which TWO results of the King Street experiment surprised Alice?", "options": ["A more shoppers", "B improved safety", "C less air pollution", "D more relaxed atmosphere", "E less noise pollution"], "answer": ["A", "E"] }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Newspaper Analysis",
+      "instructions": "Complete the notes below and match the article types.",
+      "noteCompletion": {
+        "questions": [
+          { "qNumber": 21, "text": "what ____ the item is on", "answer": "page" },
+          { "qNumber": 22, "text": "the ____ of the item, including the headline", "answer": "size" },
+          { "qNumber": 23, "text": "any ____ accompanying the item", "answer": "graphics", "altAnswer": "graphic" },
+          { "qNumber": 24, "text": "the ____ of the item, e.g. what’s made prominent", "answer": "structure" },
+          { "qNumber": 25, "text": "the writer’s main ____", "answer": "purpose" },
+          { "qNumber": 26, "text": "the ____ the writer may make about the reader", "answer": "assumptions", "altAnswer": "assumption" }
+        ]
+      },
+      "matching": {
+        "options": { "A": "She will definitely look for a suitable article", "B": "She may look for a suitable article", "C": "She definitely won’t look for an article" },
+        "questions": [
+          { "qNumber": 27, "text": "national news item", "answer": "A" },
+          { "qNumber": 28, "text": "editorial", "answer": "C" },
+          { "qNumber": 29, "text": "human interest", "answer": "C" },
+          { "qNumber": 30, "text": "arts", "answer": "B" }
+        ]
+      }
+    },
+    {
+      "partNumber": 4,
+      "title": "Early History of Keeping Clean",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "questions": [
+        { "qNumber": 31, "text": "Prehistoric: water used to wash off ____", "answer": "mud" },
+        { "qNumber": 32, "text": "Babylon: soap-like material found in ____ cylinders", "answer": "clay" },
+        { "qNumber": 33, "text": "Greece: used a strigil - scraper made of ____", "answer": "metal" },
+        { "qNumber": 34, "text": "Germany/Gaul: used soap to colour their ____", "answer": "hair" },
+        { "qNumber": 35, "text": "Rome: water carried to Roman ____ by aqueducts", "answer": "baths", "altAnswer": "bath" },
+        { "qNumber": 36, "text": "Middle Ages: decline in bathing contributed to ____", "answer": "diseases", "altAnswer": "disease" },
+        { "qNumber": 37, "text": "____ began to be added to soap", "answer": "perfume" },
+        { "qNumber": 38, "text": "1791: Leblanc way of making soda ash from ____", "answer": "salt" },
+        { "qNumber": 39, "text": "Early 1800s: Chevreul turned soapmaking into a ____", "answer": "science" },
+        { "qNumber": 40, "text": "From 1800s: no longer a ____ on soap", "answer": "tax" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 4,
+  "section": "Writing",
+  "totalTasks": 2,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "type": "Academic - Task 1 (Pie Chart + Table)",
+      "timeSuggested": "20 minutes",
+      "wordLimit": "at least 150 words",
+      "instructions": "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt": "The chart below shows what Anthropology graduates from one university did after finishing their undergraduate degree course. The table shows the salaries of the anthropologists in work after five years.",
+      "visualData": {
+        "pieChartTitle": "Destination of Anthropology graduates (from one university)",
+        "pieChartCategories": [
+          { "label": "Full-time work", "value": "52%" },
+          { "label": "Part-time work", "value": "15%" },
+          { "label": "Unemployed", "value": "12%" },
+          { "label": "Full-time postgrad study", "value": "8%" },
+          { "label": "Not known", "value": "8%" },
+          { "label": "Part-time work + postgrad study", "value": "5%" }
+        ],
+        "tableTitle": "Salaries of Anthropology graduates (after 5 years’ work)",
+        "tableData": [
+          { "type": "Freelance consultants", "bands": ["5%", "15%", "40%", "40%"] },
+          { "type": "Government sector", "bands": ["5%", "15%", "30%", "50%"] },
+          { "type": "Private companies", "bands": ["10%", "35%", "25%", "30%"] }
+        ],
+        "imageUrl": "/4_image/4.png"
+      }
+    },
+    {
+      "taskNumber": 2,
+      "type": "Academic - Task 2 (Advantages & Disadvantages Essay)",
+      "timeSuggested": "40 minutes",
+      "wordLimit": "at least 250 words",
+      "instructions": "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "prompt": "In some cultures, children are often told that they can achieve anything if they try hard enough.",
+      "specificQuestion": "What are the advantages and disadvantages of giving children this message?"
+    }
+  ]
+  }

@@ -1,0 +1,115 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 4,
+  "section": "Listening",
+  "totalQuestions": 40,
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Customer Satisfaction Survey",
+      "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "subSections": [
+        {
+          "title": "Customer details",
+          "questions": [
+            { "qNumber": 1, "text": "Occupation: ____", "answer": "journalist", "type": "form-completion" },
+            { "qNumber": 2, "text": "Reason for travel today: ____", "answer": "shopping", "type": "form-completion" }
+          ]
+        },
+        {
+          "title": "Journey information",
+          "questions": [
+            { "qNumber": 3, "text": "Name of station returning to: ____", "answer": "Staunfirth", "type": "form-completion" },
+            { "qNumber": 4, "text": "Type of ticket purchased: standard ____ ticket", "answer": "return", "type": "form-completion" },
+            { "qNumber": 5, "text": "Cost of ticket: £ ____", "answer": "23.70", "type": "form-completion" },
+            { "qNumber": 6, "text": "Where ticket was bought: ____", "answer": "online", "type": "form-completion" }
+          ]
+        },
+        {
+          "title": "Satisfaction with journey",
+          "questions": [
+            { "qNumber": 7, "text": "Least satisfied with: the ____ this morning", "answer": "delay", "type": "form-completion" }
+          ]
+        },
+        {
+          "title": "Satisfaction with station facilities",
+          "questions": [
+            { "qNumber": 8, "text": "Most satisfied with: how much ____ was provided", "answer": "information", "type": "form-completion" },
+            { "qNumber": 9, "text": "Least satisfied with: lack of seats, particularly on the ____", "answer": "platforms", "altAnswer": "platform", "type": "form-completion" },
+            { "qNumber": 10, "text": "Neither satisfied nor dissatisfied with: the ____ available", "answer": "parking", "type": "form-completion" }
+          ]
+        }
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Croft Valley Park",
+      "instructions": "Label the map below and choose TWO letters for the playground and glass houses.",
+      "mapLabelling": {
+        "title": "Croft Valley Park Layout",
+        "imageUrl": "/4_image/4.png",
+        "questions": [
+          { "qNumber": 11, "text": "café", "answer": "D" },
+          { "qNumber": 12, "text": "toilets", "answer": "C" },
+          { "qNumber": 13, "text": "formal gardens", "answer": "G" },
+          { "qNumber": 14, "text": "outdoor gym", "answer": "H" },
+          { "qNumber": 15, "text": "skateboard ramp", "answer": "A" },
+          { "qNumber": 16, "text": "wild flowers", "answer": "E" }
+        ]
+      },
+      "multipleSelection": [
+        { 
+          "qNumbers": [17, 18], 
+          "text": "What does the speaker say about the adventure playground?", 
+          "options": ["A Children must be supervised.", "B It costs more in winter.", "C Some activities are only for younger children.", "D No payment is required.", "E It was recently expanded."], 
+          "answer": ["A", "D"] 
+        },
+        { 
+          "qNumbers": [19, 20], 
+          "text": "What does the speaker say about the glass houses?", 
+          "options": ["A They are closed at weekends.", "B Volunteers are needed to work there.", "C They were badly damaged by fire.", "D More money is needed to repair some of the glass.", "E Visitors can see palm trees from tropical regions."], 
+          "answer": ["A", "C"] 
+        }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Presentation about Refrigeration",
+      "instructions": "Choose the correct letter, A, B or C; and match the topics to the researchers.",
+      "multipleChoice": [
+        { "qNumber": 21, "text": "What did Annie discover from reading about icehouses?", "options": { "A": "why they were first created", "B": "how the ice was kept frozen", "C": "where they were located" }, "answer": "B" },
+        { "qNumber": 22, "text": "What point does Annie make about refrigeration in ancient Rome?", "options": { "A": "It became a commercial business.", "B": "It used snow from nearby.", "C": "It took a long time to become popular." }, "answer": "A" },
+        { "qNumber": 23, "text": "Both Annie and Jack are worried about modern refrigerators regarding:", "options": { "A": "complexity of technology", "B": "irresponsible disposal", "C": "large number that break down" }, "answer": "B" },
+        { "qNumber": 24, "text": "What do Jack and Annie agree regarding domestic fridges?", "options": { "A": "They are generally good value for money.", "B": "There are plenty of useful variations.", "C": "They are more useful than other appliances." }, "answer": "A" }
+      ],
+      "matching": {
+        "options": { "A": "Annie", "B": "Jack", "C": "both Annie and Jack" },
+        "questions": [
+          { "qNumber": 25, "text": "the goods that are refrigerated", "answer": "A" },
+          { "qNumber": 26, "text": "the effects on health", "answer": "A" },
+          { "qNumber": 27, "text": "the impact on food producers", "answer": "B" },
+          { "qNumber": 28, "text": "the impact on cities", "answer": "B" },
+          { "qNumber": 29, "text": "refrigerated transport", "answer": "A" },
+          { "qNumber": 30, "text": "domestic fridges", "answer": "C" }
+        ]
+      }
+    },
+    {
+      "partNumber": 4,
+      "title": "How the Industrial Revolution affected life in Britain",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "questions": [
+        { "qNumber": 31, "text": "People’s possessions were used to measure Britain’s ____", "answer": "wealth" },
+        { "qNumber": 32, "text": "Developments in production and in ____ greatly changed lives", "answer": "technology" },
+        { "qNumber": 33, "text": "Revolution would not have happened without the new types of ____ used", "answer": "power" },
+        { "qNumber": 34, "text": "The leading industry was ____", "answer": "textiles", "altAnswer": "textile" },
+        { "qNumber": 35, "text": "New ____ made factories necessary", "answer": "machines" },
+        { "qNumber": 36, "text": "greater access to ____ made people more aware of shop goods", "answer": "newspapers" },
+        { "qNumber": 37, "text": "people were not limited to buying ____ goods", "answer": "local" },
+        { "qNumber": 38, "text": "inside stores because of better ____", "answer": "lighting" },
+        { "qNumber": 39, "text": "outside stores, because ____ were bigger", "answer": "windows" },
+        { "qNumber": 40, "text": "____ that was persuasive became much more common", "answer": "advertising" }
+      ]
+    }
+  ]
+}

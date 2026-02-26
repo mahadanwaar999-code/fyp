@@ -1,0 +1,37 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 1,
+  "section": "Writing",
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "type": "Academic - Task 1 (Data Description)",
+      "timeSuggested": "20 minutes",
+      "wordLimit": "at least 150 words",
+      "instructions": "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt": "The chart below shows the results of a survey about people’s coffee and tea buying and drinking habits in five Australian cities.",
+      "chartData": {
+        "title": "Coffee and tea buying and drinking habits in five cities in Australia",
+        "cities": ["Sydney", "Melbourne", "Brisbane", "Adelaide", "Hobart"],
+        "legend": [
+          "Bought fresh coffee in last 4 weeks",
+          "Bought instant coffee in last 4 weeks",
+          "Went to a café for coffee or tea in last 4 weeks"
+        ],
+        "imageUrl": "/1_image/1.png"
+      }
+    },
+    {
+      "taskNumber": 2,
+      "type": "Academic - Task 2 (Opinion/Discussion Essay)",
+      "timeSuggested": "40 minutes",
+      "wordLimit": "at least 250 words",
+      "instructions": "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "prompt": "In some countries, owning a home rather than renting one is very important for people.",
+      "specificQuestions": [
+        "Why might this be the case?",
+        "Do you think this is a positive or negative situation?"
+      ]
+    }
+  ]
+}

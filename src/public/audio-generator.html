@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Audio Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .alert {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            color: #856404;
+        }
+        .alert strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #e9ecef;
+        }
+        .section h3 {
+            color: #333399;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-number {
+            background: #333399;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: vertical;
+            margin-bottom: 15px;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #333399;
+        }
+        .controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary {
+            background: #333399;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #4444aa;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(51, 51, 153, 0.3);
+        }
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .status-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .quick-links {
+            background: #e7f3ff;
+            border: 2px solid #2196F3;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .quick-links h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        .quick-links a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .quick-links a:hover {
+            text-decoration: underline;
+        }
+        .quick-links ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .quick-links li {
+            margin-bottom: 8px;
+        }
+        .instructions {
+            background: #f8f9fa;
+            border-left: 4px solid #333399;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .instructions h3 {
+            color: #333399;
+            margin-bottom: 15px;
+        }
+        .instructions ol {
+            margin-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎧 IELTS Listening Audio Generator</h1>
+        <p class="subtitle">Generate test audio files for your IELTS practice application</p>
+
+        <div class="alert">
+            <strong>⚠️ Important:</strong>
+            This tool uses your browser's text-to-speech to generate audio. For the best quality, use one of the online TTS services listed below, or download official IELTS audio materials.
+        </div>
+
+        <div class="quick-links">
+            <h3>🚀 Quick Option: Use Free Online TTS (Better Quality)</h3>
+            <p><strong>Recommended for best results:</strong></p>
+            <ul>
+                <li><a href="https://ttsmaker.com/" target="_blank">TTSMaker</a> - Free, no login, high quality MP3 download</li>
+                <li><a href="https://www.naturalreaders.com/online/" target="_blank">Natural Readers</a> - Free with natural voices</li>
+                <li><a href="https://cloud.google.com/text-to-speech" target="_blank">Google Cloud TTS</a> - Professional quality</li>
+                <li><a href="https://ttsfree.com/" target="_blank">TTSFree</a> - Simple and fast</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>Steps:</strong></p>
+            <ol>
+                <li>Copy the text from each section below</li>
+                <li>Paste into one of the TTS websites above</li>
+                <li>Generate and download as MP3</li>
+                <li>Rename to section1.mp3, section2.mp3, section3.mp3, section4.mp3</li>
+                <li>Place files in your project's <code>/public/audio/listening/</code> folder</li>
+            </ol>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 How to Use This Generator (Browser TTS)</h3>
+            <ol>
+                <li>Click "Generate Audio" for each section below</li>
+                <li>Wait for the speech synthesis to complete</li>
+                <li>Click "Download MP3" to save each file</li>
+                <li>Place all 4 files in: <code>/public/audio/listening/</code></li>
+                <li>Refresh your application and click "Check Files Again"</li>
+            </ol>
+            <p style="margin-top: 10px;"><strong>Note:</strong> Browser TTS quality varies. For production, use official IELTS materials.</p>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section">
+            <h3><span class="section-number">1</span> Section 1: Social Conversation</h3>
+            <textarea id="text1" readonly>Good morning, City Library. How may I help you?
+
+Hello. I'd like to renew my library membership, please.
+
+Certainly. Could I have your membership number?
+
+Yes, it's L-H-two-seven-nine-four-six.
+
+Thank you. And may I have your full name, please?
+
+It's Sarah Johnson. That's S-A-R-A-H, Johnson, J-O-H-N-S-O-N.
+
+Perfect. I can see your account here. Now, would you like the standard membership for twelve months, or the premium membership for twenty-four months?
+
+What's the difference?
+
+Well, the standard membership is thirty-five dollars and allows you to borrow up to five books at a time. The premium membership is sixty dollars and you can borrow up to ten books, plus you get access to our online resources.
+
+I'll go with the premium one, please.
+
+Excellent choice. And would you like to add any family members?
+
+Yes, my son. His name is David, and he's fifteen years old.
+
+Great. That's an additional fifteen dollars for a junior membership. So your total is seventy-five dollars. How would you like to pay?
+
+Can I pay by credit card over the phone?
+
+Yes, absolutely. Your renewal is now complete. Your new membership card will arrive by post within five working days. Is there anything else I can help you with today?
+
+No, that's everything. Thank you very much.
+
+You're welcome. Have a great day!</textarea>
+            <div class="controls">
+                <button class="btn-primary" onclick="speakText(1)">
+                    🔊 Generate Audio
+                </button>
+                <button class="btn-success" id="download1" onclick="downloadAudio(1)" disabled>
+                    ⬇️ Download section1.mp3
+                </button>
+            </div>
+            <div id="status1"></div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <h3><span class="section-number">2</span> Section 2: Museum Tour</h3>
+            <textarea id="text2" readonly>Welcome to the National Science Museum. My name is Doctor Emily Watson, and I'll be your guide for today's tour.
+
+Before we begin, I'd like to give you some important information about the museum. The building has four floors, and we'll be visiting three of them today. On the ground floor, where we are now, you'll find the reception desk, the gift shop, and the café. The café is open from nine in the morning until five in the afternoon, and it serves hot and cold drinks as well as sandwiches and cakes.
+
+On the first floor, we have our permanent exhibition on space exploration. This includes real spacecraft that have been to the moon, and you can even touch a piece of moon rock. Please note that photography is not allowed in this section due to the sensitive nature of the materials.
+
+The second floor houses our dinosaur exhibition. This is very popular with children, and there are several interactive displays where you can dig for fossils. We ask that adults supervise their children in this area.
+
+The third floor contains our temporary exhibitions. At the moment, we're showing a special collection on ancient Egypt, which includes several mummies and artifacts that are over three thousand years old. This exhibition will be here until the end of next month.
+
+Now, our tour will last approximately ninety minutes, and we'll be starting on the first floor. Please stay together as a group, and feel free to ask questions at any time. We'll have a fifteen-minute break halfway through in the museum café. Does anyone have any questions before we start? Excellent, let's begin.</textarea>
+            <div class="controls">
+                <button class="btn-primary" onclick="speakText(2)">
+                    🔊 Generate Audio
+                </button>
+                <button class="btn-success" id="download2" onclick="downloadAudio(2)" disabled>
+                    ⬇️ Download section2.mp3
+                </button>
+            </div>
+            <div id="status2"></div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <h3><span class="section-number">3</span> Section 3: Academic Discussion</h3>
+            <textarea id="text3" readonly>Good morning, Sarah and Michael. How are you both getting on with your research project?
+
+Pretty well, thanks. We've collected most of our data now.
+
+Yes, we conducted twenty interviews last week, which took longer than we expected.
+
+That's good progress. And what about the analysis? Have you started looking at the results?
+
+We have. The preliminary findings are quite interesting. We found that sixty percent of respondents prefer online learning to traditional classroom-based learning.
+
+Sixty percent? That's higher than I would have expected. Did you find any reasons for this preference?
+
+Yes, the main reason was flexibility. People said they could study at their own pace and fit learning around their work and family commitments.
+
+I see. And what about the disadvantages of online learning? Did people mention any concerns?
+
+They did. The most common complaint was the lack of face-to-face interaction with teachers and other students. About forty-five percent of respondents mentioned this.
+
+Interesting. And what's your next step?
+
+We're going to write up our findings and compare them with similar studies from other universities. Then we'll prepare our final presentation.
+
+Sounds good. When's your deadline?
+
+The end of this month. We're planning to submit the written report on the twenty-eighth, and then we'll do our presentation in the first week of next month.
+
+Excellent. Keep up the good work. I look forward to seeing your final results.</textarea>
+            <div class="controls">
+                <button class="btn-primary" onclick="speakText(3)">
+                    🔊 Generate Audio
+                </button>
+                <button class="btn-success" id="download3" onclick="downloadAudio(3)" disabled>
+                    ⬇️ Download section3.mp3
+                </button>
+            </div>
+            <div id="status3"></div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section">
+            <h3><span class="section-number">4</span> Section 4: Academic Lecture</h3>
+            <textarea id="text4" readonly>Good morning, everyone. Today's lecture will focus on climate change and its impact on ocean ecosystems.
+
+As you know, the Earth's oceans play a crucial role in regulating our planet's climate. They absorb approximately thirty percent of the carbon dioxide produced by human activities, which helps to reduce the greenhouse effect. However, this process has significant consequences for marine life.
+
+One of the most serious effects is ocean acidification. When carbon dioxide dissolves in seawater, it forms carbonic acid, which lowers the pH of the water. Since the beginning of the Industrial Revolution, ocean acidity has increased by approximately thirty percent. This makes it difficult for marine organisms, particularly those with calcium carbonate shells, such as corals, mollusks, and some plankton, to build and maintain their shells.
+
+Another major concern is the rise in ocean temperatures. Over the past century, average ocean surface temperatures have increased by approximately zero point eight degrees Celsius. While this may not seem like much, it has profound effects on marine ecosystems. Warmer waters hold less oxygen, which can lead to dead zones where marine life cannot survive. Additionally, many species of fish are migrating towards cooler waters, disrupting established ecosystems and fishing industries.
+
+Coral reefs are particularly vulnerable to these changes. When water temperatures rise too high, corals expel the algae living in their tissues, causing coral bleaching. Without these algae, the corals cannot survive for long. Scientists estimate that if current trends continue, we could lose ninety percent of coral reefs by the year two thousand and fifty.
+
+The loss of coral reefs would be catastrophic, not only for marine biodiversity but also for the estimated five hundred million people worldwide who depend on reefs for food, income, and coastal protection.
+
+In conclusion, the impact of climate change on our oceans is profound and far-reaching. Addressing this challenge requires global cooperation and immediate action to reduce carbon emissions and protect marine ecosystems. Thank you for your attention.</textarea>
+            <div class="controls">
+                <button class="btn-primary" onclick="speakText(4)">
+                    🔊 Generate Audio
+                </button>
+                <button class="btn-success" id="download4" onclick="downloadAudio(4)" disabled>
+                    ⬇️ Download section4.mp3
+                </button>
+            </div>
+            <div id="status4"></div>
+        </div>
+
+        <div class="alert" style="background: #d4edda; border-color: #c3e6cb; color: #155724;">
+            <strong>✅ After Downloading:</strong>
+            Place all 4 MP3 files in your project folder at: <code>/public/audio/listening/</code>
+        </div>
+    </div>
+
+    <script>
+        const audioChunks = {};
+        const mediaRecorders = {};
+
+        async function speakText(section) {
+            const text = document.getElementById(`text${section}`).value;
+            const statusDiv = document.getElementById(`status${section}`);
+            const downloadBtn = document.getElementById(`download${section}`);
+            
+            // Show processing status
+            statusDiv.innerHTML = '<div class="status status-info">🎤 Generating audio... Please wait...</div>';
+            downloadBtn.disabled = true;
+
+            try {
+                // Check if speech synthesis is supported
+                if (!('speechSynthesis' in window)) {
+                    throw new Error('Speech synthesis not supported in this browser');
+                }
+
+                // Use Web Speech API
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.rate = 0.9; // Slightly slower for clarity
+                utterance.pitch = 1;
+                utterance.volume = 1;
+
+                // Try to use a high-quality voice
+                const voices = speechSynthesis.getVoices();
+                const englishVoice = voices.find(voice => 
+                    voice.lang.startsWith('en') && 
+                    (voice.name.includes('Google') || voice.name.includes('Microsoft') || voice.name.includes('Natural'))
+                ) || voices.find(voice => voice.lang.startsWith('en'));
+
+                if (englishVoice) {
+                    utterance.voice = englishVoice;
+                }
+
+                // Speak
+                speechSynthesis.speak(utterance);
+
+                utterance.onend = () => {
+                    statusDiv.innerHTML = '<div class="status status-success">✅ Audio generated! Now recording to file...</div>';
+                    // Since we can't directly record browser TTS, we'll provide alternative instructions
+                    setTimeout(() => {
+                        statusDiv.innerHTML = `
+                            <div class="status status-info">
+                                <strong>ℹ️ Browser Limitation:</strong> Browser TTS cannot be directly recorded to MP3.<br>
+                                <strong>Recommended:</strong> Use one of the online TTS services above for better quality MP3 files.<br>
+                                <strong>Alternative:</strong> Use your device's audio recording software to capture the speech above.
+                            </div>
+                        `;
+                    }, 2000);
+                };
+
+                utterance.onerror = (event) => {
+                    throw new Error('Speech synthesis failed: ' + event.error);
+                };
+
+            } catch (error) {
+                statusDiv.innerHTML = `<div class="status status-error">❌ Error: ${error.message}</div>`;
+            }
+        }
+
+        function downloadAudio(section) {
+            // This function is kept for future enhancement
+            alert('Please use one of the online TTS services listed above for high-quality MP3 downloads.');
+        }
+
+        // Load voices when they become available
+        if ('speechSynthesis' in window) {
+            speechSynthesis.onvoiceschanged = () => {
+                const voices = speechSynthesis.getVoices();
+                console.log('Available voices:', voices.map(v => v.name));
+            };
+        }
+    </script>
+</body>
+</html>

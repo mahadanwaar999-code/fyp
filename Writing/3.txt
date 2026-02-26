@@ -1,0 +1,39 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 3,
+  "section": "Writing",
+  "totalTasks": 2,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "type": "Academic - Task 1 (Process Diagram)",
+      "timeSuggested": "20 minutes",
+      "wordLimit": "at least 150 words",
+      "instructions": "Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt": "The diagram below shows how instant noodles are manufactured.",
+      "diagramMetadata": {
+        "title": "Manufacturing instant noodles",
+        "steps": [
+          "1. Storage silos (Flour)",
+          "2. Mixer (Water + Oil)",
+          "3. Rollers (Dough sheets)",
+          "4. Dough strips",
+          "5. Noodles discs",
+          "6. Cooking (oil) + drying",
+          "7. Adding vegetables + spices (into cups)",
+          "8. Labelling + sealing"
+        ],
+        "imageUrl": "/3_image/3.png"
+      }
+    },
+    {
+      "taskNumber": 2,
+      "type": "Academic - Task 2 (Discussion + Opinion Essay)",
+      "timeSuggested": "40 minutes",
+      "wordLimit": "at least 250 words",
+      "instructions": "Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "prompt": "Some people say that advertising is extremely successful at persuading us to buy things. Other people think that advertising is so common that we no longer pay attention to it.",
+      "specificQuestion": "Discuss both these views and give your own opinion."
+    }
+  ]
+  }

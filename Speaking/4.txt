@@ -1,0 +1,60 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 4,
+  "section": "Speaking",
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Introduction and Interview",
+      "description": "The examiner asks the candidate about him/herself, his/her home, work or studies and other familiar topics.",
+      "mainTopic": "Jewellery",
+      "questions": [
+        "How often do you wear jewellery? [Why/Why not?]",
+        "What type of jewellery do you like best? [Why/Why not?]",
+        "When do people like to give jewellery in your country? [Why?]",
+        "Have you ever given jewellery to someone as a gift? [Why/Why not?]"
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Individual Long Turn (Cue Card)",
+      "instructions": "You will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say. You can make some notes to help you if you wish.",
+      "cueCard": {
+        "prompt": "Describe an interesting TV programme you watched about a science topic.",
+        "bulletPoints": [
+          "what science topic this TV programme was about",
+          "when you saw this TV programme",
+          "what you learnt from this TV programme about a science topic"
+        ],
+        "conclusionPoint": "and explain why you found this TV programme interesting.",
+        "timers": {
+          "preparationSeconds": 60,
+          "speakingSeconds": 120
+        }
+      }
+    },
+    {
+      "partNumber": 3,
+      "title": "Two-way Discussion",
+      "description": "More abstract issues related to the topic in Part 2.",
+      "discussionTopics": [
+        {
+          "subTopic": "Science and the public",
+          "questions": [
+            "How interested are most people in your country in science?",
+            "Why do you think children today might be better at science than their parents?",
+            "How do you suggest the public can learn more about scientific developments?"
+          ]
+        },
+        {
+          "subTopic": "Scientific discoveries",
+          "questions": [
+            "What do you think are the most important scientific discoveries in the last 100 years?",
+            "Do you agree or disagree that there are no more major scientific discoveries left to make?",
+            "Who should pay for scientific research – governments or private companies?"
+          ]
+        }
+      ]
+    }
+  ]
+}

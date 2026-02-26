@@ -1,0 +1,60 @@
+{
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 3,
+  "section": "Speaking",
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Introduction and Interview",
+      "description": "The examiner asks the candidate about him/herself, his/her home, work or studies and other familiar topics.",
+      "mainTopic": "Swimming",
+      "questions": [
+        "Did you learn to swim when you were a child? [Why/Why not?]",
+        "How often do you go swimming now? [Why/Why not?]",
+        "What places are there for swimming where you live? [Why?]",
+        "Do you think it would be more enjoyable to go swimming outdoors or at an indoor pool? [Why?]"
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Individual Long Turn (Cue Card)",
+      "instructions": "You will have to talk about the topic for one to two minutes. You have one minute to think about what you are going to say. You can make some notes to help you if you wish.",
+      "cueCard": {
+        "prompt": "Describe a famous business person that you know about.",
+        "bulletPoints": [
+          "who this person is",
+          "what kind of business this person is involved in",
+          "what you know about this business person"
+        ],
+        "conclusionPoint": "and explain what you think of this business person.",
+        "timers": {
+          "preparationSeconds": 60,
+          "speakingSeconds": 120
+        }
+      }
+    },
+    {
+      "partNumber": 3,
+      "title": "Two-way Discussion",
+      "description": "More abstract issues related to the topic in Part 2.",
+      "discussionTopics": [
+        {
+          "subTopic": "Famous people today",
+          "questions": [
+            "What kinds of people are most famous in your country today?",
+            "Why are there so many stories about famous people in the news?",
+            "Do you agree or disagree that many young people today want to be famous?"
+          ]
+        },
+        {
+          "subTopic": "Advantages of being famous",
+          "questions": [
+            "Do you think it is easy for famous people to earn a lot of money?",
+            "Why might famous people enjoy having fans?",
+            "In what ways could famous people use their influence to do good things in the world?"
+          ]
+        }
+      ]
+    }
+  ]
+}

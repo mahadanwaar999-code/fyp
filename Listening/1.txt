@@ -1,0 +1,146 @@
+ {
+  "bookTitle": "Cambridge IELTS 15",
+  "testNumber": 1,
+  "section": "Listening",
+  "totalQuestions": 40,
+  "parts": [
+    {
+      "partNumber": 1,
+      "title": "Bankside Recruitment Agency",
+      "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "questions": [
+        { "qNumber": 1, "text": "Name of agent: Becky ____", "answer": "Jamieson", "type": "gap-fill" },
+        { "qNumber": 2, "text": "Best to call her in the ____", "answer": "afternoon", "type": "gap-fill" },
+        { "qNumber": 3, "text": "Must have good ____ skills", "answer": "communication", "type": "gap-fill" },
+        { "qNumber": 4, "text": "Jobs are usually for at least one ____", "answer": "week", "type": "gap-fill" },
+        { "qNumber": 5, "text": "Pay is usually £____ per hour", "answer": "10", "type": "gap-fill" },
+        { "qNumber": 6, "text": "Wear a ____ to the interview", "answer": "suit", "type": "gap-fill" },
+        { "qNumber": 7, "text": "Must bring your ____ to the interview", "answer": "passport", "type": "gap-fill" },
+        { "qNumber": 8, "text": "They will ask questions about each applicant’s ____", "answer": "personality", "type": "gap-fill" },
+        { "qNumber": 9, "text": "The ____ you receive at interview will benefit you", "answer": "feedback", "type": "gap-fill" },
+        { "qNumber": 10, "text": "Less ____ is involved in applying for jobs", "answer": "time", "type": "gap-fill" }
+      ]
+    },
+    {
+      "partNumber": 2,
+      "title": "Matthews Island Holidays",
+      "instructions": "Choose the correct letter, A, B or C; and complete the table below.",
+      "questions": [
+        {
+          "qNumber": 11,
+          "text": "According to the speaker, the company",
+          "options": { "A": "has been in business for longer...", "B": "arranges holidays to more destinations...", "C": "has more customers..." },
+          "answer": "A",
+          "type": "multiple-choice"
+        },
+        {
+          "qNumber": 12,
+          "text": "Where can customers meet the tour manager?",
+          "options": { "A": "Liverpool", "B": "Heysham", "C": "Luton" },
+          "answer": "B",
+          "type": "multiple-choice"
+        },
+        {
+          "qNumber": 13,
+          "text": "How many lunches are included in the price?",
+          "options": { "A": "three", "B": "four", "C": "five" },
+          "answer": "A",
+          "type": "multiple-choice"
+        },
+        {
+          "qNumber": 14,
+          "text": "Customers have to pay extra for",
+          "options": { "A": "larger room", "B": "short notice", "C": "transferring to another date" },
+          "answer": "C",
+          "type": "multiple-choice"
+        },
+        { "qNumber": 15, "text": "Hotel dining room has view of the ____", "answer": "river", "type": "table-completion" },
+        { "qNumber": 16, "text": "Tynwald may have been founded in ____ not 979", "answer": "1422", "type": "table-completion" },
+        { "qNumber": 17, "text": "train to the ____ of Snaefell", "answer": "top", "type": "table-completion" },
+        { "qNumber": 18, "text": "Company provides a ____ for local transport", "answer": "pass", "type": "table-completion" },
+        { "qNumber": 19, "text": "Take the ____ railway train", "answer": "steam", "type": "table-completion" },
+        { "qNumber": 20, "text": "former ____ has old castle", "answer": "capital", "type": "table-completion" }
+      ]
+    },
+    {
+      "partNumber": 3,
+      "title": "Personality Traits and Family Position",
+      "instructions": "Match the position in family with the trait (A-H), choose the correct MCQ letter, and choose TWO letters for the final question.",
+      "matching": {
+        "options": {
+          "A": "is likely to be creative",
+          "B": "may have poor social skills",
+          "C": "tends to be well-organised",
+          "D": "is likely to be independent",
+          "E": "tends to be competitive",
+          "F": "is likely to be a good mediator",
+          "G": "tends to be confident",
+          "H": "is likely to be ambitious"
+        },
+        "questions": [
+          { "qNumber": 21, "text": "the eldest child", "answer": "G", "type": "matching" },
+          { "qNumber": 22, "text": "a middle child", "answer": "F", "type": "matching" },
+          { "qNumber": 23, "text": "the youngest child", "answer": "A", "type": "matching" },
+          { "qNumber": 24, "text": "a twin", "answer": "E", "type": "matching" },
+          { "qNumber": 25, "text": "an only child", "answer": "B", "type": "matching" },
+          { "qNumber": 26, "text": "a child with much older siblings", "answer": "C", "type": "matching" }
+        ]
+      },
+      "multipleChoice": [
+        { 
+          "qNumber": 27, 
+          "text": "What do the speakers say about birth order and academic success?", 
+          "options": { 
+            "A": "There is conflicting evidence about the link.", 
+            "B": "There is little doubt that a link exists.", 
+            "C": "Studies have neglected important factors." 
+          }, 
+          "answer": "C", 
+          "type": "multiple-choice" 
+        },
+        { 
+          "qNumber": 28, 
+          "text": "What does Ruth think is surprising about oldest children?", 
+          "options": { 
+            "A": "They often have leadership roles as teachers.", 
+            "B": "They have only slight advantages over their siblings.", 
+            "C": "They receive extra parental attention." 
+          }, 
+          "answer": "A", 
+          "type": "multiple-choice" 
+        }
+      ],
+      "multipleSelection": [
+        {
+          "qNumbers": [29, 30],
+          "text": "Which TWO experiences of sibling rivalry do the speakers agree has been valuable for them?",
+          "options": [
+            "A learning to share",
+            "B learning to stand up for oneself",
+            "C learning to be a good loser",
+            "D learning to be tolerant",
+            "E learning to say sorry"
+          ],
+          "answer": ["B", "D"]
+        }
+      ]
+    },
+    {
+      "partNumber": 4,
+      "title": "The Eucalyptus Tree in Australia",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "questions": [
+        { "qNumber": 31, "text": "provides ____ and food for species", "answer": "shelter", "type": "note-completion" },
+        { "qNumber": 32, "text": "leaves provide ____ for disinfectant", "answer": "oil", "type": "note-completion" },
+        { "qNumber": 33, "text": "Cause - lime used for making ____ was absorbed", "answer": "roads", "type": "note-completion" },
+        { "qNumber": 34, "text": "Cause - ____ feed on eucalyptus leaves", "answer": "insects", "type": "note-completion" },
+        { "qNumber": 35, "text": "high-frequency bushfires result in growth of ____", "answer": "grass", "altAnswer": "grasses", "type": "note-completion" },
+        { "qNumber": 36, "text": "make more ____ available to the trees", "answer": "water", "type": "note-completion" },
+        { "qNumber": 37, "text": "maintain the quality of the ____", "answer": "soil", "type": "note-completion" },
+        { "qNumber": 38, "text": "growth of '____ rainforest'", "answer": "dry", "type": "note-completion" },
+        { "qNumber": 39, "text": "is a ____ ecosystem", "answer": "simple", "type": "note-completion" },
+        { "qNumber": 40, "text": "ideal environment for the ____ of the bell-miner", "answer": "nest", "altAnswer": "nests", "type": "note-completion" }
+      ]
+    }
+  ]
+}
