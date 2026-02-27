@@ -1,0 +1,9 @@
+exclude:
+  - node_modules
+  - backend
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - package.json
+  - package-lock.json
