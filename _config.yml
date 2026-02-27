@@ -1,9 +1,8 @@
 exclude:
   - node_modules
   - backend
-  - vendor
-  - Gemfile
-  - Gemfile.lock
+  - src              # Add this - exclude source files
   - README.md
   - package.json
   - package-lock.json
+  - vite.config.js   # Add this
