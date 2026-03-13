@@ -9,7 +9,11 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: '*',
+    origin: [
+      "http://localhost:3000",
+      "https://mahadanwaar999-code.github.io"
+    ],
+    credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }
 });
@@ -22,16 +26,19 @@ app.use((req, res, next) => {
 const PORT = process.env.PORT || 5001;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://mahadanwaar999-code.github.io"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use('/public/listening-media', express.static('public/listening-media'));
 app.use('/uploads', express.static('uploads'));
 
 // Database Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ielts_listening', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log('MongoDB connected successfully'))
 .catch(err => console.error('MongoDB connection error:', err));
 
